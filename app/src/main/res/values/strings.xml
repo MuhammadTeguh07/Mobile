@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UTS_MOBILE</string>
+
+    <string-array name="daftar_dokter">
+        <item>Dr. Sela Putri</item>
+        <item>Dr. Agus Hendra</item>
+    </string-array>
+
+    <string name="title_activity_buatbiodata">Daftar Mahasiswa Baru</string>
+    <string name="title_activity_lihatbiodata">Melihat Daftar Mahasiswa</string>
+    <string name="title_activity_updatebiodata">Memperbarui Daftar Mahasiswa</string>
+</resources>

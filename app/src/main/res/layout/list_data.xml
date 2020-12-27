@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/icon_dokter_wanita"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/dokter_wanita"/>
+        <ImageView
+            android:id="@+id/icon_pasien"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ibu_hamil"
+            android:layout_below="@+id/icon_dokter_wanita"/>
+        <TextView
+            android:layout_toRightOf="@+id/icon_dokter_wanita"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/dokter"
+            android:text="Line 1"
+            android:textSize="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/icon_dokter_wanita"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/pasien"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/dokter"
+            android:text="Line 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

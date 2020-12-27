@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MomSkuy"
+                android:textSize="33dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Data
+                Pasien"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <Button
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pemeriksaan"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <Button
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Foto"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <Button
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Balasan
+                    dokter"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffff"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp">
+                <TextView
+                    android:layout_marginBottom="30dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DATA PASIEN"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#000"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_form_tambah"
+                        android:drawablePadding="10dp"
+                        android:hint="No. KTP"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp">
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_form_tambah"
+                        android:drawablePadding="10dp"
+                        android:hint="No. KK"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"/>
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_form_tambah"
+                        android:drawablePadding="10dp"
+                        android:hint="Nama"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp">
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_form_tambah"
+                        android:drawablePadding="10dp"
+                        android:hint="Alamat"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"/>
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_form_tambah"
+                        android:drawablePadding="10dp"
+                        android:hint="Kota"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp">
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_form_tambah"
+                        android:drawablePadding="10dp"
+                        android:hint="Tgl. Lahir"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"/>
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_form_tambah"
+                        android:drawablePadding="10dp"
+                        android:hint="No. Tlp"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:onClick="Btn_Next"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="NEXT"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="255dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

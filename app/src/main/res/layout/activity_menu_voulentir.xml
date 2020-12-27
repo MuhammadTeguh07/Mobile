@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:text="MomSkuy"
+                android:textSize="40dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="50dp"
+                android:paddingTop="25dp"
+                android:fontFamily="sans-serif-medium"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:onClick="beranda"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Beranda"
+                style="?attr/materialButtonOutlinedStyle"
+                tools:ignore="OnClick" />
+            <Button
+                android:onClick="notifikasi"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Notifikasi"
+                style="?attr/materialButtonOutlinedStyle"
+                tools:ignore="OnClick" />
+            <Button
+                android:onClick="pengaturan"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pengaturan"
+                style="?attr/materialButtonOutlinedStyle"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="60dp">
+        <Button
+            android:id="@+id/bt_notif"
+            android:text="Notification"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_menu"
+            android:onClick="tambah"
+            tools:ignore="OnClick">
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_person_add_black_24dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pendaftaran"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="cari"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            tools:ignore="OnClick">
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_assignment_black_24dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Data Pasien"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
